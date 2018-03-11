@@ -1,8 +1,8 @@
-$major = $(major);
-$minor = $(minor);
-$patch = $(rev:.r);
-$isVersioned = $(isVersioned);
-$isBetta = $(isBetta);
+$major =$env:major;
+$minor = $env:minor;
+$patch = $env:rev:.r;
+$isVersioned = $env:isVersioned;
+$isBetta = $env:isBetta;
 $beta = "beta$(build.buildNumber)";
 Host-Write $major'.'$minor'.'$patch'-'$beta
 if($isBetta)
