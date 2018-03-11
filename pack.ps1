@@ -1,6 +1,6 @@
 $major =$env:major;
 $minor = $env:minor;
-$patch = $Env:Rev:rr;
+$patch = $Env:BUILD_BUILDNUMBER;
 $isVersioned = $env:isVersioned;
 $isBetta = $env:isBetta;
 $beta = "beta$(build.buildNumber)";
