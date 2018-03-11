@@ -1,6 +1,6 @@
 $major = $(major);
 $minor = $(minor);
-$patch = $(patch);
+$patch = $(rev:.r);
 $isVersioned = $(isVersioned);
 $isBetta = $(isBetta);
 $beta = "beta$(build.buildNumber)";
